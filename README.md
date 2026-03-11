@@ -10,17 +10,15 @@ Linear Regression is a supervised machine learning algorithm used to model the r
 
 It assumes a linear relationship between input features and the output:
 
-y=wx+b
+\[
+MSE = \frac{1}{n} \sum (y_{pred} - y_{true})^2
+\]
 
 Where:
-
-w = weight (slope)
-
-b = bias (intercept)
-
-x = feature input
-
-y = predicted output
+- w = weight (slope)
+- b = bias (intercept)
+- x = feature input
+- y = predicted output
 
 The model learns the parameters w and b by minimizing the prediction error.
 
@@ -33,15 +31,18 @@ MSE: 1​/n ∑(ypred​−ytrue​)2
 
 Update Rules: 
 
-w = w − α *(∂w/∂L)
+\[
+w = w - \alpha \frac{\partial L}{\partial w}
+\]
 
-𝑏 = 𝑏 − α *(∂𝐿/∂𝑏)
+\[
+b = b - \alpha \frac{\partial L}{\partial b}
+\]
+
 
 Where:
-
-α = learning rate
-
-L = loss function
+- α = learning rate
+- L = loss function
 
 Gradient Descent updates weights repeatedly until the model converges.
 
@@ -53,9 +54,8 @@ Gradient Descent updates weights repeatedly until the model converges.
 - Useful baseline model for many machine learning problems
 
 ## **Disadvantages**
-Assumes linear relationship between variables
-Sensitive to outliers
-Cannot model complex nonlinear patterns
-Performance depends on feature scaling and quality
-
+- Assumes a linear relationship between variables  
+- Sensitive to outliers  
+- Cannot capture complex nonlinear patterns  
+- Performance depends on feature scaling and data quality
 
