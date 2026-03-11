@@ -46,11 +46,11 @@ L = loss function
 Gradient Descent updates weights repeatedly until the model converges.
 
 ## **Advantages of Linear Regression**
-Simple and easy to interpret
-Fast to train
-Works well when relationships are linear
-Requires relatively little data preparation
-Useful baseline model for many problems
+- Simple and easy to interpret
+- Fast to train
+- Works well when relationships are linear
+- Requires relatively little data preparation
+- Useful baseline model for many machine learning problems
 
 ## **Disadvantages**
 Assumes linear relationship between variables
