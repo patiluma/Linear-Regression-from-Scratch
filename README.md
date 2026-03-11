@@ -9,10 +9,7 @@ The purpose of this project is to understand the mathematics and optimization be
 Linear Regression is a supervised machine learning algorithm used to model the relationship between a dependent variable (target) and one or more independent variables (features).
 
 It assumes a linear relationship between input features and the output:
-
-\[
-MSE = \frac{1}{n} \sum (y_{pred} - y_{true})^2
-\]
+y=wx+b
 
 Where:
 - w = weight (slope)
@@ -27,19 +24,14 @@ The model learns the parameters w and b by minimizing the prediction error.
 To find the optimal parameters, this implementation uses Gradient Descent, an optimization algorithm that iteratively updates model parameters to minimize the loss function.
 The loss function used is Mean Squared Error (MSE)
 
-MSE: 1​/n ∑(ypred​−ytrue​)2
+MSE = 1/n ​∑(ypred​−ytrue​)2
 
 Update Rules: 
 
-\[
-w = w - \alpha \frac{\partial L}{\partial w}
-\]
+w = w−α(∂L/∂w)​
 
-\[
-b = b - \alpha \frac{\partial L}{\partial b}
-\]
-
-
+b = b−α(∂L/∂b)
+	​
 Where:
 - α = learning rate
 - L = loss function
