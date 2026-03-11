@@ -13,9 +13,13 @@ It assumes a linear relationship between input features and the output:
 y=wx+b
 
 Where:
+
 w = weight (slope)
+
 b = bias (intercept)
+
 x = feature input
+
 y = predicted output
 
 The model learns the parameters w and b by minimizing the prediction error.
@@ -28,12 +32,17 @@ The loss function used is Mean Squared Error (MSE)
 MSE: 1​/n ∑(ypred​−ytrue​)2
 
 Update Rules: 
+
 w = w − α *(∂w/∂L)
+
 𝑏 = 𝑏 − α *(∂𝐿/∂𝑏)
 
 Where:
+
 α = learning rate
+
 L = loss function
+
 Gradient Descent updates weights repeatedly until the model converges.
 
 ## **Advantages of Linear Regression**
